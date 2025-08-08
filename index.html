@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Far West Tours - Velho Oeste no Texas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Far West Tours</h1>
+    <p>Explore o Velho Oeste no coração do Texas</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Descubra o legado do Velho Oeste</h2>
+      <p>O Texas preserva locais icônicos que remetem ao tempo dos cowboys, dos saloons e dos grandes confrontos do oeste selvagem. Conheça 5 destinos imperdíveis!</p>
+    </section>
+
+    <section class="cards">
+      <div class="card" data-local="The Alamo">
+        <img src="alamo.jpg" alt="The Alamo" height="250px" >
+        <h3>The Alamo</h3>
+        <p><strong>Cidade:</strong> San Antonio</p>
+        <p>Um dos marcos mais importantes da Revolução do Texas, cenário da famosa Batalha de 1836.</p>
+      </div>
+
+      <div class="card" data-local="Cadillac Ranch">
+        <img src="cadillac.jpg" alt="Cadillac Ranch" height="250px">
+        <h3>Cadillac Ranch</h3>
+        <p><strong>Cidade:</strong> Amarillo</p>
+        <p>Instalação artística icônica que homenageia a cultura automobilística e o espírito livre do Oeste.</p>
+      </div>
+
+      <div class="card" data-local="Natural Bridge Caverns">
+        <img src="naturalbridgecaverns.jpg" alt="Natural Bridge Caverns" height="250px">
+        <h3>Natural Bridge Caverns</h3>
+        <p><strong>Cidade:</strong> San Antonio</p>
+        <p>Explorações subterrâneas incríveis entre formações rochosas e mistérios da natureza texana.</p>
+      </div>
+
+      <div class="card" data-local="San Antonio River Walk">
+        <img src="riverwalk" alt="San Antonio River Walk" height="250px">
+        <h3>San Antonio River Walk</h3>
+        <p><strong>Cidade:</strong> San Antonio</p>
+        <p>Charmoso passeio à beira do rio com restaurantes e história viva do velho Texas.</p>
+      </div>
+
+      <div class="card" data-local="Houston Zoo">
+        <img src="houstonzoo.jpg" alt="Houston Zoo" height="250px">
+        <h3>Houston Zoo</h3>
+        <p><strong>Cidade:</strong> Houston</p>
+        <p>Mais de 6 mil animais em um zoológico premiado, símbolo da vida e preservação texana.</p>
+      </div>
+    </section>
+
+    <section id="map">
+      <h2>Mapa Interativo</h2>
+      <div id="leafletMap"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Far West Tours - Desenvolvido para fins educacionais</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
